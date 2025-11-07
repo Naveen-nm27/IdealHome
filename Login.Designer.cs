@@ -41,7 +41,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(106, 314);
+            button1.Location = new Point(117, 133);
             button1.Name = "button1";
             button1.Size = new Size(195, 52);
             button1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(377, 9);
+            label1.Location = new Point(194, 7);
             label1.Name = "label1";
             label1.Size = new Size(40, 17);
             label1.TabIndex = 1;
@@ -66,9 +66,9 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(button1);
-            groupBox1.Location = new Point(209, 33);
+            groupBox1.Location = new Point(26, 31);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(421, 405);
+            groupBox1.Size = new Size(421, 226);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
@@ -92,7 +92,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(177, 371);
+            label4.Location = new Point(181, 188);
             label4.Name = "label4";
             label4.Size = new Size(54, 17);
             label4.TabIndex = 2;
@@ -119,7 +119,7 @@
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(475, 283);
             Controls.Add(label1);
             Controls.Add(groupBox1);
             Name = "Login";
