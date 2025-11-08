@@ -43,6 +43,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -184,11 +185,21 @@
             label2.TabIndex = 1;
             label2.Text = "First Name";
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 276);
+            button1.Name = "button1";
+            button1.Size = new Size(776, 43);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // HomeOwnerSignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 574);
+            Controls.Add(button1);
             Controls.Add(groupBox1);
             Name = "HomeOwnerSignUp";
             Text = "HomeOwnerSignUp";
@@ -215,5 +226,6 @@
         private Label label3;
         private TextBox textBox1;
         private Label label2;
+        private Button button1;
     }
 }
