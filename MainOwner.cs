@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class AddHome : Form
+    public partial class MainOwner : Form
     {
-        public AddHome()
+        public MainOwner()
         {
             InitializeComponent();
-        }
-
-        private void AddHome_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

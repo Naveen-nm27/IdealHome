@@ -47,9 +47,11 @@
             groupBox2 = new GroupBox();
             comboBox3 = new ComboBox();
             label9 = new Label();
-            textBox6 = new TextBox();
             label10 = new Label();
             openFileDialog1 = new OpenFileDialog();
+            comboBox2 = new ComboBox();
+            button1 = new Button();
+            button2 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
@@ -81,7 +83,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(393, 77);
+            label11.Location = new Point(422, 77);
             label11.Name = "label11";
             label11.Size = new Size(89, 17);
             label11.TabIndex = 16;
@@ -89,7 +91,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(503, 81);
+            pictureBox1.Location = new Point(548, 81);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 141);
             pictureBox1.TabIndex = 15;
@@ -97,15 +99,15 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(503, 35);
+            textBox5.Location = new Point(548, 35);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(253, 25);
+            textBox5.Size = new Size(205, 25);
             textBox5.TabIndex = 12;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(393, 38);
+            label7.Location = new Point(422, 38);
             label7.Name = "label7";
             label7.Size = new Size(104, 17);
             label7.TabIndex = 11;
@@ -114,7 +116,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(102, 205);
+            comboBox1.Location = new Point(130, 205);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(267, 25);
             comboBox1.TabIndex = 10;
@@ -130,7 +132,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(102, 156);
+            textBox4.Location = new Point(130, 156);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(267, 25);
             textBox4.TabIndex = 8;
@@ -146,7 +148,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(102, 110);
+            textBox3.Location = new Point(130, 110);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(267, 25);
             textBox3.TabIndex = 6;
@@ -162,7 +164,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(102, 69);
+            textBox2.Location = new Point(130, 74);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(267, 25);
             textBox2.TabIndex = 4;
@@ -178,7 +180,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(102, 35);
+            textBox1.Location = new Point(130, 35);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(267, 25);
             textBox1.TabIndex = 2;
@@ -203,13 +205,13 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(comboBox2);
             groupBox2.Controls.Add(comboBox3);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textBox6);
             groupBox2.Controls.Add(label10);
             groupBox2.Location = new Point(12, 293);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(774, 211);
+            groupBox2.Size = new Size(774, 117);
             groupBox2.TabIndex = 15;
             groupBox2.TabStop = false;
             groupBox2.Text = "University Info";
@@ -231,31 +233,52 @@
             label9.TabIndex = 13;
             label9.Text = "University";
             // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(130, 67);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(267, 25);
-            textBox6.TabIndex = 12;
-            // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(6, 70);
             label10.Name = "label10";
-            label10.Size = new Size(104, 17);
+            label10.Size = new Size(35, 17);
             label10.TabIndex = 11;
-            label10.Text = "Google Location";
+            label10.Text = "Area";
             // 
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(130, 67);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(267, 25);
+            comboBox2.TabIndex = 15;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(13, 416);
+            button1.Name = "button1";
+            button1.Size = new Size(376, 48);
+            button1.TabIndex = 16;
+            button1.Text = "Sign Up";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(395, 416);
+            button2.Name = "button2";
+            button2.Size = new Size(391, 48);
+            button2.TabIndex = 17;
+            button2.Text = "Clear";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // UserSignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 626);
+            ClientSize = new Size(798, 467);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(label1);
             Controls.Add(groupBox1);
@@ -289,10 +312,12 @@
         private GroupBox groupBox2;
         private ComboBox comboBox3;
         private Label label9;
-        private TextBox textBox6;
         private Label label10;
         private Label label11;
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
+        private ComboBox comboBox2;
+        private Button button1;
+        private Button button2;
     }
 }

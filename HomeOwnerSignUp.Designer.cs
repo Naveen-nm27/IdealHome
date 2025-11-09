@@ -43,6 +43,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            button2 = new Button();
             button1 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -66,7 +67,7 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(774, 258);
+            groupBox1.Size = new Size(774, 245);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Personal Info";
@@ -84,7 +85,7 @@
             // 
             pictureBox1.Location = new Point(503, 81);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 141);
+            pictureBox1.Size = new Size(253, 141);
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
@@ -185,20 +186,30 @@
             label2.TabIndex = 1;
             label2.Text = "First Name";
             // 
+            // button2
+            // 
+            button2.Location = new Point(395, 263);
+            button2.Name = "button2";
+            button2.Size = new Size(391, 48);
+            button2.TabIndex = 19;
+            button2.Text = "Clear";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
-            button1.Location = new Point(12, 276);
+            button1.Location = new Point(12, 263);
             button1.Name = "button1";
-            button1.Size = new Size(776, 43);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Size = new Size(376, 48);
+            button1.TabIndex = 18;
+            button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = true;
             // 
             // HomeOwnerSignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 574);
+            ClientSize = new Size(798, 318);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox1);
             Name = "HomeOwnerSignUp";
@@ -226,6 +237,7 @@
         private Label label3;
         private TextBox textBox1;
         private Label label2;
+        private Button button2;
         private Button button1;
     }
 }
