@@ -30,33 +30,33 @@
         {
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
+            button12 = new Button();
+            button13 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            label9 = new Label();
             label5 = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
             groupBox3 = new GroupBox();
+            button10 = new Button();
+            button11 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            label7 = new Label();
             label3 = new Label();
             label4 = new Label();
             pictureBox2 = new PictureBox();
             groupBox2 = new GroupBox();
+            button9 = new Button();
+            button8 = new Button();
+            button5 = new Button();
+            button2 = new Button();
+            label8 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            button5 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -94,6 +94,51 @@
             groupBox4.TabIndex = 4;
             groupBox4.TabStop = false;
             groupBox4.Text = "House 3";
+            // 
+            // button12
+            // 
+            button12.Location = new Point(110, 93);
+            button12.Name = "button12";
+            button12.Size = new Size(90, 29);
+            button12.TabIndex = 12;
+            button12.Text = "Remove";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(14, 93);
+            button13.Name = "button13";
+            button13.Size = new Size(90, 29);
+            button13.TabIndex = 11;
+            button13.Text = "Edit";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(536, 71);
+            button6.Name = "button6";
+            button6.Size = new Size(90, 48);
+            button6.TabIndex = 10;
+            button6.Text = "Add To List";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(536, 17);
+            button7.Name = "button7";
+            button7.Size = new Size(90, 48);
+            button7.TabIndex = 9;
+            button7.Text = "Details";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(359, 30);
+            label9.Name = "label9";
+            label9.Size = new Size(36, 17);
+            label9.TabIndex = 6;
+            label9.Text = "Price";
             // 
             // label5
             // 
@@ -138,6 +183,51 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "House 2";
             // 
+            // button10
+            // 
+            button10.Location = new Point(110, 99);
+            button10.Name = "button10";
+            button10.Size = new Size(90, 29);
+            button10.TabIndex = 12;
+            button10.Text = "Remove";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(14, 99);
+            button11.Name = "button11";
+            button11.Size = new Size(90, 29);
+            button11.TabIndex = 11;
+            button11.Text = "Edit";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(536, 71);
+            button3.Name = "button3";
+            button3.Size = new Size(90, 48);
+            button3.TabIndex = 10;
+            button3.Text = "Add To List";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(536, 17);
+            button4.Name = "button4";
+            button4.Size = new Size(90, 48);
+            button4.TabIndex = 9;
+            button4.Text = "Details";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(359, 30);
+            label7.Name = "label7";
+            label7.Size = new Size(36, 17);
+            label7.TabIndex = 5;
+            label7.Text = "Price";
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -181,6 +271,51 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "House 1";
             // 
+            // button9
+            // 
+            button9.Location = new Point(111, 89);
+            button9.Name = "button9";
+            button9.Size = new Size(90, 29);
+            button9.TabIndex = 10;
+            button9.Text = "Remove";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(15, 89);
+            button8.Name = "button8";
+            button8.Size = new Size(90, 29);
+            button8.TabIndex = 9;
+            button8.Text = "Edit";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(537, 70);
+            button5.Name = "button5";
+            button5.Size = new Size(90, 48);
+            button5.TabIndex = 8;
+            button5.Text = "Add To List";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(346, 61);
+            button2.Name = "button2";
+            button2.Size = new Size(90, 48);
+            button2.TabIndex = 7;
+            button2.Text = "Details";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(360, 30);
+            label8.Name = "label8";
+            label8.Size = new Size(36, 17);
+            label8.TabIndex = 6;
+            label8.Text = "Price";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -215,141 +350,6 @@
             button1.TabIndex = 1;
             button1.Text = "Add New Property";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(359, 30);
-            label7.Name = "label7";
-            label7.Size = new Size(36, 17);
-            label7.TabIndex = 5;
-            label7.Text = "Price";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(360, 30);
-            label8.Name = "label8";
-            label8.Size = new Size(36, 17);
-            label8.TabIndex = 6;
-            label8.Text = "Price";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(359, 30);
-            label9.Name = "label9";
-            label9.Size = new Size(36, 17);
-            label9.TabIndex = 6;
-            label9.Text = "Price";
-            // 
-            // button5
-            // 
-            button5.Location = new Point(537, 70);
-            button5.Name = "button5";
-            button5.Size = new Size(90, 48);
-            button5.TabIndex = 8;
-            button5.Text = "Add To List";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(537, 16);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 48);
-            button2.TabIndex = 7;
-            button2.Text = "Details";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(536, 71);
-            button3.Name = "button3";
-            button3.Size = new Size(90, 48);
-            button3.TabIndex = 10;
-            button3.Text = "Add To List";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(536, 17);
-            button4.Name = "button4";
-            button4.Size = new Size(90, 48);
-            button4.TabIndex = 9;
-            button4.Text = "Details";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(536, 71);
-            button6.Name = "button6";
-            button6.Size = new Size(90, 48);
-            button6.TabIndex = 10;
-            button6.Text = "Add To List";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(536, 17);
-            button7.Name = "button7";
-            button7.Size = new Size(90, 48);
-            button7.TabIndex = 9;
-            button7.Text = "Details";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(15, 89);
-            button8.Name = "button8";
-            button8.Size = new Size(90, 29);
-            button8.TabIndex = 9;
-            button8.Text = "Edit";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(111, 89);
-            button9.Name = "button9";
-            button9.Size = new Size(90, 29);
-            button9.TabIndex = 10;
-            button9.Text = "Remove";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(110, 99);
-            button10.Name = "button10";
-            button10.Size = new Size(90, 29);
-            button10.TabIndex = 12;
-            button10.Text = "Remove";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            button11.Location = new Point(14, 99);
-            button11.Name = "button11";
-            button11.Size = new Size(90, 29);
-            button11.TabIndex = 11;
-            button11.Text = "Edit";
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            button12.Location = new Point(110, 93);
-            button12.Name = "button12";
-            button12.Size = new Size(90, 29);
-            button12.TabIndex = 12;
-            button12.Text = "Remove";
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            button13.Location = new Point(14, 93);
-            button13.Name = "button13";
-            button13.Size = new Size(90, 29);
-            button13.TabIndex = 11;
-            button13.Text = "Edit";
-            button13.UseVisualStyleBackColor = true;
             // 
             // MainOwner
             // 
