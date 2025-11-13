@@ -30,12 +30,12 @@
         {
             button1 = new Button();
             groupBox1 = new GroupBox();
+            label5 = new Label();
             textBox2 = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
-            label5 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,11 +58,20 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(button1);
-            groupBox1.Location = new Point(12, 31);
+            groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(774, 216);
+            groupBox1.Size = new Size(774, 280);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(351, 149);
+            label5.Name = "label5";
+            label5.Size = new Size(102, 17);
+            label5.TabIndex = 5;
+            label5.Text = "Fogot Password";
             // 
             // textBox2
             // 
@@ -88,6 +97,7 @@
             label4.Size = new Size(54, 17);
             label4.TabIndex = 2;
             label4.Text = "Sign Up";
+            label4.Click += label4_Click;
             // 
             // label2
             // 
@@ -105,21 +115,12 @@
             textBox1.Size = new Size(329, 25);
             textBox1.TabIndex = 1;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(351, 149);
-            label5.Name = "label5";
-            label5.Size = new Size(102, 17);
-            label5.TabIndex = 5;
-            label5.Text = "Fogot Password";
-            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(798, 278);
+            ClientSize = new Size(803, 304);
             Controls.Add(groupBox1);
             Name = "Login";
             Text = "Login";

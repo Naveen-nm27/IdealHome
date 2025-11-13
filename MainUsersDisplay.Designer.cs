@@ -1,6 +1,6 @@
 ﻿namespace IdealHome
 {
-    partial class MainUsers
+    partial class MainUsersDisplay
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            groupBox5 = new GroupBox();
+            label10 = new Label();
+            button9 = new Button();
+            button10 = new Button();
+            label11 = new Label();
+            label12 = new Label();
+            pictureBox4 = new PictureBox();
             groupBox4 = new GroupBox();
             label9 = new Label();
             button6 = new Button();
@@ -50,24 +57,15 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button8 = new Button();
-            groupBox5 = new GroupBox();
-            label10 = new Label();
-            button9 = new Button();
-            button10 = new Button();
-            label11 = new Label();
-            label12 = new Label();
-            pictureBox4 = new PictureBox();
             groupBox1.SuspendLayout();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -76,12 +74,80 @@
             groupBox1.Controls.Add(groupBox4);
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Location = new Point(10, 71);
+            groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(779, 594);
+            groupBox1.Size = new Size(779, 602);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Properties";
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(label10);
+            groupBox5.Controls.Add(button9);
+            groupBox5.Controls.Add(button10);
+            groupBox5.Controls.Add(label11);
+            groupBox5.Controls.Add(label12);
+            groupBox5.Controls.Add(pictureBox4);
+            groupBox5.Location = new Point(19, 435);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(755, 128);
+            groupBox5.TabIndex = 9;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "House 3";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(289, 21);
+            label10.Name = "label10";
+            label10.Size = new Size(36, 17);
+            label10.TabIndex = 8;
+            label10.Text = "Price";
+            // 
+            // button9
+            // 
+            button9.Location = new Point(543, 71);
+            button9.Name = "button9";
+            button9.Size = new Size(90, 48);
+            button9.TabIndex = 7;
+            button9.Text = "Add To List";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(543, 17);
+            button10.Name = "button10";
+            button10.Size = new Size(90, 48);
+            button10.TabIndex = 6;
+            button10.Text = "Details";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(15, 61);
+            label11.Name = "label11";
+            label11.Size = new Size(46, 17);
+            label11.TabIndex = 2;
+            label11.Text = "Owner";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(15, 30);
+            label12.Name = "label12";
+            label12.Size = new Size(56, 17);
+            label12.TabIndex = 1;
+            label12.Text = "Address";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(640, 14);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(109, 108);
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
             // 
             // groupBox4
             // 
@@ -260,6 +326,7 @@
             button2.TabIndex = 2;
             button2.Text = "Details";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label2
             // 
@@ -287,103 +354,18 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            button1.Location = new Point(10, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(187, 53);
-            button1.TabIndex = 3;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(203, 12);
-            button8.Name = "button8";
-            button8.Size = new Size(187, 53);
-            button8.TabIndex = 4;
-            button8.Text = "SignUp";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(label10);
-            groupBox5.Controls.Add(button9);
-            groupBox5.Controls.Add(button10);
-            groupBox5.Controls.Add(label11);
-            groupBox5.Controls.Add(label12);
-            groupBox5.Controls.Add(pictureBox4);
-            groupBox5.Location = new Point(19, 435);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(755, 128);
-            groupBox5.TabIndex = 9;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "House 3";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(289, 21);
-            label10.Name = "label10";
-            label10.Size = new Size(36, 17);
-            label10.TabIndex = 8;
-            label10.Text = "Price";
-            // 
-            // button9
-            // 
-            button9.Location = new Point(543, 71);
-            button9.Name = "button9";
-            button9.Size = new Size(90, 48);
-            button9.TabIndex = 7;
-            button9.Text = "Add To List";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(543, 17);
-            button10.Name = "button10";
-            button10.Size = new Size(90, 48);
-            button10.TabIndex = 6;
-            button10.Text = "Details";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(15, 61);
-            label11.Name = "label11";
-            label11.Size = new Size(46, 17);
-            label11.TabIndex = 2;
-            label11.Text = "Owner";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(15, 30);
-            label12.Name = "label12";
-            label12.Size = new Size(56, 17);
-            label12.TabIndex = 1;
-            label12.Text = "Address";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Location = new Point(640, 14);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(109, 108);
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
-            // 
-            // MainUsers
+            // MainUsersDisplay
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 677);
-            Controls.Add(button8);
-            Controls.Add(button1);
+            ClientSize = new Size(798, 588);
             Controls.Add(groupBox1);
-            Name = "MainUsers";
+            Name = "MainUsersDisplay";
             Text = "MainUsers";
             groupBox1.ResumeLayout(false);
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -393,9 +375,6 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -414,10 +393,8 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button button1;
         private Button button5;
         private Button button2;
-        private Button button8;
         private Label label9;
         private Button button6;
         private Button button7;

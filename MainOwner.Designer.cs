@@ -300,12 +300,13 @@
             // 
             // button2
             // 
-            button2.Location = new Point(346, 61);
+            button2.Location = new Point(537, 16);
             button2.Name = "button2";
             button2.Size = new Size(90, 48);
             button2.TabIndex = 7;
             button2.Text = "Details";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label8
             // 
