@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class HomeOwnerSignUp : Form
+    public partial class Form2 : Form
     {
-        public HomeOwnerSignUp()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
         {
 
         }

@@ -45,12 +45,14 @@
             label2 = new Label();
             button2 = new Button();
             button1 = new Button();
+            textBox6 = new TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(textBox6);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(textBox5);
@@ -65,150 +67,158 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(12, 11);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(774, 245);
+            groupBox1.Size = new Size(844, 252);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Personal Info";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(393, 77);
+            label11.Location = new Point(441, 63);
             label11.Name = "label11";
-            label11.Size = new Size(89, 17);
+            label11.Size = new Size(81, 15);
             label11.TabIndex = 16;
-            label11.Text = "Upload Photo";
+            label11.Text = "Profile Picture";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(503, 81);
+            pictureBox1.Location = new Point(551, 66);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(253, 141);
+            pictureBox1.Size = new Size(253, 124);
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(503, 35);
+            textBox5.Location = new Point(551, 26);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(253, 25);
+            textBox5.Size = new Size(253, 23);
             textBox5.TabIndex = 12;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(393, 38);
+            label7.Location = new Point(441, 29);
             label7.Name = "label7";
-            label7.Size = new Size(104, 17);
+            label7.Size = new Size(94, 15);
             label7.TabIndex = 11;
             label7.Text = "Google Location";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(102, 205);
+            comboBox1.Location = new Point(102, 181);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(267, 25);
+            comboBox1.Size = new Size(267, 23);
             comboBox1.TabIndex = 10;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 205);
+            label6.Location = new Point(6, 181);
             label6.Name = "label6";
-            label6.Size = new Size(51, 17);
+            label6.Size = new Size(45, 15);
             label6.TabIndex = 9;
             label6.Text = "Gender";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(102, 156);
+            textBox4.Location = new Point(102, 138);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(267, 25);
+            textBox4.Size = new Size(267, 23);
             textBox4.TabIndex = 8;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(6, 164);
+            label5.Location = new Point(6, 145);
             label5.Name = "label5";
-            label5.Size = new Size(31, 17);
+            label5.Size = new Size(28, 15);
             label5.TabIndex = 7;
             label5.Text = "Age";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(102, 110);
+            textBox3.Location = new Point(102, 97);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(267, 25);
+            textBox3.Size = new Size(267, 23);
             textBox3.TabIndex = 6;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(6, 118);
+            label4.Location = new Point(6, 104);
             label4.Name = "label4";
-            label4.Size = new Size(56, 17);
+            label4.Size = new Size(49, 15);
             label4.TabIndex = 5;
             label4.Text = "Address";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(102, 69);
+            textBox2.Location = new Point(102, 61);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(267, 25);
+            textBox2.Size = new Size(143, 23);
             textBox2.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 77);
+            label3.Location = new Point(6, 68);
             label3.Name = "label3";
-            label3.Size = new Size(70, 17);
+            label3.Size = new Size(80, 15);
             label3.TabIndex = 3;
-            label3.Text = "Last Name";
+            label3.Text = "Display Name";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(102, 35);
+            textBox1.Location = new Point(102, 31);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(267, 25);
+            textBox1.Size = new Size(125, 23);
             textBox1.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(6, 38);
+            label2.Location = new Point(6, 34);
             label2.Name = "label2";
-            label2.Size = new Size(71, 17);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 1;
-            label2.Text = "First Name";
+            label2.Text = "Full Name";
             // 
             // button2
             // 
-            button2.Location = new Point(395, 263);
+            button2.Location = new Point(420, 316);
             button2.Name = "button2";
-            button2.Size = new Size(391, 48);
+            button2.Size = new Size(391, 42);
             button2.TabIndex = 19;
             button2.Text = "Clear";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 263);
+            button1.Location = new Point(37, 316);
             button1.Name = "button1";
-            button1.Size = new Size(376, 48);
+            button1.Size = new Size(376, 42);
             button1.TabIndex = 18;
             button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = true;
             // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(251, 28);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(125, 23);
+            textBox6.TabIndex = 17;
+            // 
             // HomeOwnerSignUp
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 318);
+            ClientSize = new Size(868, 395);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox1);
@@ -239,5 +249,6 @@
         private Label label2;
         private Button button2;
         private Button button1;
+        private TextBox textBox6;
     }
 }

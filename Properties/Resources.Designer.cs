@@ -59,5 +59,55 @@ namespace IdealHome.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5f61c42c564b8d32ec2831269d133962 {
+            get {
+                object obj = ResourceManager.GetObject("5f61c42c564b8d32ec2831269d133962", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5f61c42c564b8d32ec2831269d1339621 {
+            get {
+                object obj = ResourceManager.GetObject("5f61c42c564b8d32ec2831269d1339621", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5f61c42c564b8d32ec2831269d1339622 {
+            get {
+                object obj = ResourceManager.GetObject("5f61c42c564b8d32ec2831269d1339622", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _634158c5fb352d2d7f76b1816a5ef6b3 {
+            get {
+                object obj = ResourceManager.GetObject("634158c5fb352d2d7f76b1816a5ef6b3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6f87711d17b69b4974585377cdacbe55 {
+            get {
+                object obj = ResourceManager.GetObject("6f87711d17b69b4974585377cdacbe55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

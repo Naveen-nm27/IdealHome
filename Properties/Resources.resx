@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="6f87711d17b69b4974585377cdacbe55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6f87711d17b69b4974585377cdacbe55.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5f61c42c564b8d32ec2831269d1339621" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5f61c42c564b8d32ec2831269d1339621.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5f61c42c564b8d32ec2831269d133962" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5f61c42c564b8d32ec2831269d133962.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5f61c42c564b8d32ec2831269d1339622" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5f61c42c564b8d32ec2831269d1339622.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="634158c5fb352d2d7f76b1816a5ef6b3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\634158c5fb352d2d7f76b1816a5ef6b3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
