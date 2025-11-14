@@ -93,7 +93,7 @@ namespace IdealHome
 
         private void button8_Click(object sender, EventArgs e)
         {
-            UserSignUp signUp = new UserSignUp();
+            StudentSignup signUp = new StudentSignup();
             signUp.Show();
             this.Hide();
         }

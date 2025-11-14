@@ -16,5 +16,10 @@ namespace IdealHome
         {
             InitializeComponent();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

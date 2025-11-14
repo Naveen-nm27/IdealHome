@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class MainOwners : Form
+    public partial class SellerSignup : Form
     {
-        public MainOwners()
+        public SellerSignup()
         {
             InitializeComponent();
         }

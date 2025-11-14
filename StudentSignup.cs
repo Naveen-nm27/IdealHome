@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class DisplayInfo : Form
+    public partial class StudentSignup : Form
     {
-        public DisplayInfo()
+        public StudentSignup()
         {
             InitializeComponent();
         }

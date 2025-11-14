@@ -9,7 +9,7 @@ namespace IdealHome
 
         private void label4_Click(object sender, EventArgs e)
         {
-            UserSignUp signUp = new UserSignUp();
+            StudentSignup signUp = new StudentSignup();
             signUp.Show();
             this.Hide();
         }
