@@ -1,6 +1,6 @@
 ﻿namespace IdealHome
 {
-    partial class MainOwner
+    partial class MainOwners
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
             button12 = new Button();
@@ -56,7 +57,6 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -66,6 +66,15 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(187, 53);
+            button1.TabIndex = 3;
+            button1.Text = "Add New Property";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(groupBox4);
@@ -74,7 +83,7 @@
             groupBox1.Location = new Point(12, 71);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(779, 444);
-            groupBox1.TabIndex = 0;
+            groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Properties";
             // 
@@ -300,13 +309,12 @@
             // 
             // button2
             // 
-            button2.Location = new Point(537, 16);
+            button2.Location = new Point(346, 61);
             button2.Name = "button2";
             button2.Size = new Size(90, 48);
             button2.TabIndex = 7;
             button2.Text = "Details";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // label8
             // 
@@ -343,24 +351,15 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(187, 53);
-            button1.TabIndex = 1;
-            button1.Text = "Add New Property";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // MainOwner
+            // MainOwners
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 531);
+            ClientSize = new Size(800, 547);
             Controls.Add(button1);
             Controls.Add(groupBox1);
-            Name = "MainOwner";
-            Text = "Main Owners";
+            Name = "MainOwners";
+            Text = "MainOwners";
             groupBox1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
@@ -376,34 +375,34 @@
 
         #endregion
 
+        private Button button1;
         private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private Label label1;
-        private PictureBox pictureBox1;
-        private GroupBox groupBox3;
-        private Label label3;
-        private Label label4;
-        private PictureBox pictureBox2;
-        private Label label2;
         private GroupBox groupBox4;
+        private Button button12;
+        private Button button13;
+        private Button button6;
+        private Button button7;
+        private Label label9;
         private Label label5;
         private Label label6;
         private PictureBox pictureBox3;
-        private Button button1;
-        private Label label9;
-        private Label label7;
-        private Label label8;
-        private Button button6;
-        private Button button7;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button2;
-        private Button button9;
-        private Button button8;
-        private Button button12;
-        private Button button13;
+        private GroupBox groupBox3;
         private Button button10;
         private Button button11;
+        private Button button3;
+        private Button button4;
+        private Label label7;
+        private Label label3;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private GroupBox groupBox2;
+        private Button button9;
+        private Button button8;
+        private Button button5;
+        private Button button2;
+        private Label label8;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox1;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class MainOwner : Form
+    public partial class IdealHome : Form
     {
-        public MainOwner()
+        public IdealHome()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
