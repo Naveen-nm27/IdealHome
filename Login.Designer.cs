@@ -44,7 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Gadugi", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(15, 52);
+            label1.Location = new Point(15, 46);
             label1.Name = "label1";
             label1.Size = new Size(349, 25);
             label1.TabIndex = 16;
@@ -54,7 +54,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 5);
+            label2.Location = new Point(12, 4);
             label2.Name = "label2";
             label2.Size = new Size(193, 47);
             label2.TabIndex = 15;
@@ -64,9 +64,9 @@
             // 
             button8.BackColor = Color.FromArgb(0, 192, 192);
             button8.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            button8.Location = new Point(254, 214);
+            button8.Location = new Point(254, 189);
             button8.Name = "button8";
-            button8.Size = new Size(210, 60);
+            button8.Size = new Size(210, 53);
             button8.TabIndex = 17;
             button8.Text = "Login";
             button8.UseVisualStyleBackColor = false;
@@ -75,9 +75,9 @@
             // 
             button1.BackColor = Color.FromArgb(0, 192, 192);
             button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            button1.Location = new Point(24, 214);
+            button1.Location = new Point(24, 189);
             button1.Name = "button1";
-            button1.Size = new Size(210, 60);
+            button1.Size = new Size(210, 53);
             button1.TabIndex = 18;
             button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = false;
@@ -86,7 +86,7 @@
             // 
             textBox1.BackColor = Color.WhiteSmoke;
             textBox1.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Bold);
-            textBox1.Location = new Point(24, 106);
+            textBox1.Location = new Point(24, 94);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(440, 31);
             textBox1.TabIndex = 21;
@@ -95,7 +95,7 @@
             // 
             textBox2.BackColor = Color.WhiteSmoke;
             textBox2.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Bold);
-            textBox2.Location = new Point(24, 165);
+            textBox2.Location = new Point(24, 146);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(440, 31);
             textBox2.TabIndex = 22;
@@ -104,7 +104,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(24, 82);
+            label5.Location = new Point(24, 72);
             label5.Name = "label5";
             label5.Size = new Size(94, 21);
             label5.TabIndex = 23;
@@ -114,7 +114,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(24, 141);
+            label6.Location = new Point(24, 124);
             label6.Name = "label6";
             label6.Size = new Size(82, 21);
             label6.TabIndex = 24;
@@ -122,18 +122,18 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(476, 12);
+            pictureBox1.Location = new Point(476, 11);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(315, 262);
+            pictureBox1.Size = new Size(315, 231);
             pictureBox1.TabIndex = 25;
             pictureBox1.TabStop = false;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(803, 304);
+            ClientSize = new Size(846, 268);
             Controls.Add(pictureBox1);
             Controls.Add(label6);
             Controls.Add(label5);
