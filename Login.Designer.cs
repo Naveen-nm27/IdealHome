@@ -28,116 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
+            label1 = new Label();
+            label2 = new Label();
+            button8 = new Button();
             button1 = new Button();
             textBox1 = new TextBox();
-            label2 = new Label();
-            label4 = new Label();
-            label3 = new Label();
             textBox2 = new TextBox();
             label5 = new Label();
-            groupBox1.SuspendLayout();
+            label6 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // label1
             // 
-            groupBox1.BackColor = Color.RosyBrown;
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(774, 280);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(358, 96);
-            button1.Name = "button1";
-            button1.Size = new Size(95, 41);
-            button1.TabIndex = 0;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(255, 29);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(329, 25);
-            textBox1.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.Font = new Font("Gadugi", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(15, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(349, 25);
+            label1.TabIndex = 16;
+            label1.Text = "Your ideal home is just a tap away....";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(175, 29);
+            label2.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 5);
             label2.Name = "label2";
-            label2.Size = new Size(74, 17);
-            label2.TabIndex = 2;
-            label2.Text = "User Name";
+            label2.Size = new Size(193, 47);
+            label2.TabIndex = 15;
+            label2.Text = "idealhome";
             // 
-            // label4
+            // button8
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(374, 179);
-            label4.Name = "label4";
-            label4.Size = new Size(54, 17);
-            label4.TabIndex = 2;
-            label4.Text = "Sign Up";
-            label4.Click += label4_Click;
+            button8.BackColor = Color.FromArgb(0, 192, 192);
+            button8.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button8.Location = new Point(254, 214);
+            button8.Name = "button8";
+            button8.Size = new Size(210, 60);
+            button8.TabIndex = 17;
+            button8.Text = "Login";
+            button8.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // button1
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(175, 65);
-            label3.Name = "label3";
-            label3.Size = new Size(64, 17);
-            label3.TabIndex = 3;
-            label3.Text = "Password";
+            button1.BackColor = Color.FromArgb(0, 192, 192);
+            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button1.Location = new Point(24, 214);
+            button1.Name = "button1";
+            button1.Size = new Size(210, 60);
+            button1.TabIndex = 18;
+            button1.Text = "Sign Up";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.WhiteSmoke;
+            textBox1.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Bold);
+            textBox1.Location = new Point(24, 106);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(440, 31);
+            textBox1.TabIndex = 21;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(255, 65);
+            textBox2.BackColor = Color.WhiteSmoke;
+            textBox2.Font = new Font("MS Reference Sans Serif", 14.25F, FontStyle.Bold);
+            textBox2.Location = new Point(24, 165);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(329, 25);
-            textBox2.TabIndex = 4;
+            textBox2.Size = new Size(440, 31);
+            textBox2.TabIndex = 22;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(351, 149);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(24, 82);
             label5.Name = "label5";
-            label5.Size = new Size(102, 17);
-            label5.TabIndex = 5;
-            label5.Text = "Fogot Password";
+            label5.Size = new Size(94, 21);
+            label5.TabIndex = 23;
+            label5.Text = "User Name";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(24, 141);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 21);
+            label6.TabIndex = 24;
+            label6.Text = "Password";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(476, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(315, 262);
+            pictureBox1.TabIndex = 25;
+            pictureBox1.TabStop = false;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
+            BackColor = Color.White;
             ClientSize = new Size(803, 304);
-            Controls.Add(groupBox1);
+            Controls.Add(pictureBox1);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(button8);
+            Controls.Add(label1);
+            Controls.Add(label2);
             Name = "Login";
             Text = "Login";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private Label label5;
-        private TextBox textBox2;
-        private Label label3;
-        private Label label4;
+        private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private Button button8;
         private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label5;
+        private Label label6;
+        private PictureBox pictureBox1;
     }
 }

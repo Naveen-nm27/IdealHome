@@ -21,5 +21,17 @@ namespace IdealHome
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            StudentDashboard stu_dash = new StudentDashboard();
+            stu_dash.Show();
+            this.Hide();
+        }
     }
 }

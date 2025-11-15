@@ -28,144 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             button8 = new Button();
-            groupBox1 = new GroupBox();
             button1 = new Button();
-            label1 = new Label();
-            menuStrip2 = new MenuStrip();
-            toolStripMenuItem2 = new ToolStripMenuItem();
             label2 = new Label();
             button5 = new Button();
             button6 = new Button();
-            groupBox1.SuspendLayout();
-            menuStrip2.SuspendLayout();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.Location = new Point(7, 107);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(62, 439);
-            panel1.TabIndex = 7;
             // 
             // button8
             // 
-            button8.Location = new Point(307, 12);
+            button8.BackColor = Color.FromArgb(0, 192, 192);
+            button8.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button8.Location = new Point(399, 99);
             button8.Name = "button8";
-            button8.Size = new Size(148, 46);
+            button8.Size = new Size(675, 72);
             button8.TabIndex = 11;
             button8.Text = "Student";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(108, 107);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1051, 439);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            button8.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            button1.Location = new Point(461, 12);
+            button1.BackColor = Color.FromArgb(0, 192, 192);
+            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button1.Location = new Point(399, 333);
             button1.Name = "button1";
-            button1.Size = new Size(148, 46);
+            button1.Size = new Size(675, 72);
             button1.TabIndex = 9;
             button1.Text = "Become a Seller";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(316, 122);
-            label1.Name = "label1";
-            label1.Size = new Size(297, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Your ideal home is just a tap away";
-            // 
-            // menuStrip2
-            // 
-            menuStrip2.Dock = DockStyle.None;
-            menuStrip2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            menuStrip2.Items.AddRange(new ToolStripItem[] { toolStripMenuItem2 });
-            menuStrip2.Location = new Point(964, 9);
-            menuStrip2.Name = "menuStrip2";
-            menuStrip2.Size = new Size(49, 40);
-            menuStrip2.TabIndex = 9;
-            menuStrip2.Text = "menuStrip2";
-            // 
-            // toolStripMenuItem2
-            // 
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(41, 36);
-            toolStripMenuItem2.Text = "A";
-            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
+            button1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(25, 24);
+            label2.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(7, 21);
             label2.Name = "label2";
-            label2.Size = new Size(90, 15);
+            label2.Size = new Size(193, 47);
             label2.TabIndex = 10;
-            label2.Text = "idealhome logo";
+            label2.Text = "idealhome";
             // 
             // button5
             // 
-            button5.Location = new Point(629, 12);
+            button5.BackColor = Color.FromArgb(0, 192, 192);
+            button5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button5.Location = new Point(399, 177);
             button5.Name = "button5";
-            button5.Size = new Size(148, 46);
+            button5.Size = new Size(675, 72);
             button5.TabIndex = 12;
             button5.Text = "Sign In";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            button6.Location = new Point(798, 12);
+            button6.BackColor = Color.FromArgb(0, 192, 192);
+            button6.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            button6.Location = new Point(399, 255);
             button6.Name = "button6";
-            button6.Size = new Size(148, 46);
+            button6.Size = new Size(675, 72);
             button6.TabIndex = 13;
             button6.Text = "Sign Up";
-            button6.UseVisualStyleBackColor = true;
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Gadugi", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(10, 68);
+            label1.Name = "label1";
+            label1.Size = new Size(349, 25);
+            label1.TabIndex = 14;
+            label1.Text = "Your ideal home is just a tap away....";
+            label1.Click += label1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = IdealHome.Properties.Resources.back1;
+            pictureBox1.Location = new Point(12, 99);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(381, 306);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
             // 
             // IdealHome
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1167, 558);
+            BackColor = SystemColors.ControlLightLight;
+            ClientSize = new Size(1093, 418);
+            Controls.Add(pictureBox1);
+            Controls.Add(label1);
             Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(menuStrip2);
             Controls.Add(button8);
-            Controls.Add(panel1);
-            Controls.Add(groupBox1);
             Name = "IdealHome";
             Text = "IdealHome";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            menuStrip2.ResumeLayout(false);
-            menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
         private Button button8;
-        private GroupBox groupBox1;
         private Button button1;
-        private Label label1;
-        private MenuStrip menuStrip2;
-        private ToolStripMenuItem toolStripMenuItem2;
         private Label label2;
         private Button button5;
         private Button button6;
+        private Label label1;
+        private PictureBox pictureBox1;
     }
 }
