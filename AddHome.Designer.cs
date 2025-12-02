@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddHome));
             groupBox2 = new GroupBox();
+            txt_rent_price = new TextBox();
+            txt_sell_price = new TextBox();
+            home_desc = new RichTextBox();
+            label13 = new Label();
+            txt_title = new TextBox();
+            label11 = new Label();
             pictureBox7 = new PictureBox();
             label6 = new Label();
             label5 = new Label();
-            numericUpDown3 = new NumericUpDown();
             label4 = new Label();
-            numericUpDown2 = new NumericUpDown();
             label3 = new Label();
-            comboBox1 = new ComboBox();
+            combo_locate = new ComboBox();
             label2 = new Label();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
@@ -44,46 +49,99 @@
             label1 = new Label();
             label10 = new Label();
             Pictuers = new GroupBox();
+            label9 = new Label();
+            button1 = new Button();
             button5 = new Button();
             label7 = new Label();
             label8 = new Label();
-            button1 = new Button();
+            pictureBox4 = new PictureBox();
+            label12 = new Label();
+            uid = new Label();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             Pictuers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.FromArgb(0, 192, 192);
+            groupBox2.Controls.Add(txt_rent_price);
+            groupBox2.Controls.Add(txt_sell_price);
+            groupBox2.Controls.Add(home_desc);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(txt_title);
+            groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(pictureBox7);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(numericUpDown3);
             groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(numericUpDown2);
             groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(combo_locate);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(radioButton2);
             groupBox2.Controls.Add(radioButton1);
             groupBox2.Controls.Add(numericUpDown1);
             groupBox2.Controls.Add(label1);
             groupBox2.Controls.Add(label10);
-            groupBox2.Font = new Font("Gadugi", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(12, 114);
+            groupBox2.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            groupBox2.Location = new Point(12, 100);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1069, 274);
+            groupBox2.Size = new Size(1069, 534);
             groupBox2.TabIndex = 17;
             groupBox2.TabStop = false;
             groupBox2.Text = "House Info";
             // 
+            // txt_rent_price
+            // 
+            txt_rent_price.Location = new Point(186, 297);
+            txt_rent_price.Name = "txt_rent_price";
+            txt_rent_price.Size = new Size(537, 27);
+            txt_rent_price.TabIndex = 35;
+            // 
+            // txt_sell_price
+            // 
+            txt_sell_price.Location = new Point(186, 235);
+            txt_sell_price.Name = "txt_sell_price";
+            txt_sell_price.Size = new Size(537, 27);
+            txt_sell_price.TabIndex = 34;
+            // 
+            // home_desc
+            // 
+            home_desc.Location = new Point(186, 342);
+            home_desc.Name = "home_desc";
+            home_desc.Size = new Size(537, 96);
+            home_desc.TabIndex = 33;
+            home_desc.Text = "";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(8, 364);
+            label13.Name = "label13";
+            label13.Size = new Size(112, 20);
+            label13.TabIndex = 32;
+            label13.Text = "Description";
+            // 
+            // txt_title
+            // 
+            txt_title.Location = new Point(186, 48);
+            txt_title.Name = "txt_title";
+            txt_title.Size = new Size(537, 27);
+            txt_title.TabIndex = 31;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(6, 48);
+            label11.Name = "label11";
+            label11.Size = new Size(61, 20);
+            label11.TabIndex = 30;
+            label11.Text = "Titles";
+            // 
             // pictureBox7
             // 
-            pictureBox7.Image = IdealHome.Properties.Resources.back1;
             pictureBox7.Location = new Point(729, 18);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(334, 244);
@@ -94,145 +152,155 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(186, 204);
+            label6.Location = new Point(186, 274);
             label6.Name = "label6";
-            label6.Size = new Size(92, 22);
+            label6.Size = new Size(95, 20);
             label6.TabIndex = 28;
             label6.Text = "Per Room";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(186, 137);
+            label5.Location = new Point(186, 207);
             label5.Name = "label5";
-            label5.Size = new Size(98, 22);
+            label5.Size = new Size(105, 20);
             label5.TabIndex = 27;
             label5.Text = "Full House";
-            // 
-            // numericUpDown3
-            // 
-            numericUpDown3.Location = new Point(186, 229);
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(537, 33);
-            numericUpDown3.TabIndex = 26;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(6, 227);
+            label4.Location = new Point(6, 297);
             label4.Name = "label4";
-            label4.Size = new Size(83, 22);
+            label4.Size = new Size(90, 20);
             label4.TabIndex = 25;
             label4.Text = "Set Price";
-            // 
-            // numericUpDown2
-            // 
-            numericUpDown2.Location = new Point(186, 162);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(537, 33);
-            numericUpDown2.TabIndex = 24;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 164);
+            label3.Location = new Point(6, 234);
             label3.Name = "label3";
-            label3.Size = new Size(83, 22);
+            label3.Size = new Size(90, 20);
             label3.TabIndex = 23;
             label3.Text = "Set Price";
             // 
-            // comboBox1
+            // combo_locate
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(186, 21);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(537, 30);
-            comboBox1.TabIndex = 22;
+            combo_locate.FormattingEnabled = true;
+            combo_locate.Location = new Point(186, 91);
+            combo_locate.Name = "combo_locate";
+            combo_locate.Size = new Size(537, 28);
+            combo_locate.TabIndex = 22;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(6, 108);
+            label2.Location = new Point(6, 178);
             label2.Name = "label2";
-            label2.Size = new Size(134, 22);
+            label2.Size = new Size(147, 20);
             label2.TabIndex = 21;
             label2.Text = "Hose is For For";
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(186, 108);
+            radioButton2.Location = new Point(186, 178);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(58, 26);
+            radioButton2.Size = new Size(61, 24);
             radioButton2.TabIndex = 20;
             radioButton2.TabStop = true;
             radioButton2.Text = "Sell";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(250, 108);
+            radioButton1.Location = new Point(250, 178);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(66, 26);
+            radioButton1.Size = new Size(69, 24);
             radioButton1.TabIndex = 19;
             radioButton1.TabStop = true;
             radioButton1.Text = "Rent";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(186, 64);
+            numericUpDown1.Location = new Point(186, 134);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(537, 33);
+            numericUpDown1.Size = new Size(537, 27);
             numericUpDown1.TabIndex = 18;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 66);
+            label1.Location = new Point(6, 136);
             label1.Name = "label1";
-            label1.Size = new Size(166, 22);
+            label1.Size = new Size(173, 20);
             label1.TabIndex = 17;
             label1.Text = "Number Of Rooms";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(6, 21);
+            label10.Location = new Point(6, 91);
             label10.Name = "label10";
-            label10.Size = new Size(138, 22);
+            label10.Size = new Size(86, 20);
             label10.TabIndex = 11;
-            label10.Text = "Area (Location)";
+            label10.Text = "Location";
             // 
             // Pictuers
             // 
             Pictuers.BackColor = Color.FromArgb(0, 192, 192);
+            Pictuers.Controls.Add(label9);
             Pictuers.Controls.Add(button1);
             Pictuers.Font = new Font("Gadugi", 14.25F);
-            Pictuers.Location = new Point(13, 401);
+            Pictuers.Location = new Point(12, 640);
             Pictuers.Name = "Pictuers";
-            Pictuers.Size = new Size(1062, 274);
+            Pictuers.Size = new Size(1068, 282);
             Pictuers.TabIndex = 18;
             Pictuers.TabStop = false;
             Pictuers.Text = "Pictuers";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(886, 198);
+            label9.Name = "label9";
+            label9.Size = new Size(109, 22);
+            label9.TabIndex = 30;
+            label9.Text = "Add Images";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(0, 192, 192);
+            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(825, 223);
+            button1.Name = "button1";
+            button1.Size = new Size(231, 45);
+            button1.TabIndex = 20;
+            button1.Text = "Add/Remove";
+            button1.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
             button5.BackColor = Color.FromArgb(0, 192, 192);
             button5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(12, 681);
+            button5.Location = new Point(11, 932);
             button5.Name = "button5";
-            button5.Size = new Size(138, 45);
+            button5.Size = new Size(152, 45);
             button5.TabIndex = 19;
             button5.Text = "Add";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Gadugi", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(18, 65);
+            label7.Location = new Point(130, 55);
             label7.Name = "label7";
             label7.Size = new Size(349, 25);
             label7.TabIndex = 21;
@@ -242,29 +310,51 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(15, 18);
+            label8.Location = new Point(127, 8);
             label8.Name = "label8";
             label8.Size = new Size(193, 47);
             label8.TabIndex = 20;
             label8.Text = "idealhome";
             // 
-            // button1
+            // pictureBox4
             // 
-            button1.BackColor = Color.FromArgb(0, 192, 192);
-            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(825, 213);
-            button1.Name = "button1";
-            button1.Size = new Size(231, 45);
-            button1.TabIndex = 20;
-            button1.Text = "Add/Remove";
-            button1.UseVisualStyleBackColor = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(13, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(111, 68);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 32;
+            pictureBox4.TabStop = false;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            label12.Location = new Point(898, 12);
+            label12.Name = "label12";
+            label12.Size = new Size(71, 20);
+            label12.TabIndex = 33;
+            label12.Text = "UserID";
+            // 
+            // uid
+            // 
+            uid.AutoSize = true;
+            uid.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            uid.Location = new Point(975, 12);
+            uid.Name = "uid";
+            uid.Size = new Size(16, 20);
+            uid.TabIndex = 34;
+            uid.Text = ".";
             // 
             // AddHome
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1093, 732);
+            ClientSize = new Size(1092, 990);
+            Controls.Add(uid);
+            Controls.Add(label12);
+            Controls.Add(pictureBox4);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(button5);
@@ -276,10 +366,10 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             Pictuers.ResumeLayout(false);
+            Pictuers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -295,16 +385,24 @@
         private Label label2;
         private Label label6;
         private Label label5;
-        private NumericUpDown numericUpDown3;
         private Label label4;
-        private NumericUpDown numericUpDown2;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox combo_locate;
         private GroupBox Pictuers;
         private PictureBox pictureBox7;
         private Button button5;
         private Button button1;
         private Label label7;
         private Label label8;
+        private PictureBox pictureBox4;
+        private Label label9;
+        private Label label11;
+        private Label label12;
+        private Label uid;
+        private TextBox txt_title;
+        private RichTextBox home_desc;
+        private Label label13;
+        private TextBox txt_rent_price;
+        private TextBox txt_sell_price;
     }
 }

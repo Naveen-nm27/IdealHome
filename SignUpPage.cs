@@ -10,30 +10,23 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class StudentDashboard : Form
+    public partial class StudentSignup : Form
     {
-        public StudentDashboard()
+        public StudentSignup()
         {
             InitializeComponent();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void logo_click(object sender, MouseEventArgs e)
         {
-            IdealHome ih = new IdealHome();
-            ih.Show();
+            IdealHome id = new IdealHome();
+            id.Show();
             this.Hide();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void label13_Click(object sender, EventArgs e)
         {
-            AddHome add = new AddHome();
-            add.Show();
-            this.Hide();
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

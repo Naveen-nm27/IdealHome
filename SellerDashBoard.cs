@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IdealHome
 {
-    public partial class HomeDetail : Form
+    public partial class SellerDashBoard : Form
     {
-        public HomeDetail()
+        public SellerDashBoard()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void logo_click(object sender, MouseEventArgs e)
@@ -33,6 +28,20 @@ namespace IdealHome
         {
             IdealHome id = new IdealHome();
             id.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HomeDetail homedetail = new HomeDetail();
+            homedetail.Show();
+            this.Hide();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AddHome addhome = new AddHome();
+            addhome.Show();
             this.Hide();
         }
     }

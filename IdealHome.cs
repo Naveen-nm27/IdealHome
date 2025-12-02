@@ -43,5 +43,38 @@ namespace IdealHome
         {
 
         }
+
+        private void Logo_Click(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            StudentDashboard st_dsh = new StudentDashboard();
+            st_dsh.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StudentSignup signUp = new StudentSignup();
+            signUp.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SellerDashBoard sellerDash = new SellerDashBoard();
+            sellerDash.Show();
+            this.Hide();
+        }
     }
 }
