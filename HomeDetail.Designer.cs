@@ -30,29 +30,46 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeDetail));
             groupBox2 = new GroupBox();
+            label7 = new Label();
+            panel1 = new Panel();
             label9 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            pictureBox3 = new PictureBox();
             button5 = new Button();
             label1 = new Label();
             pictureBox4 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            label8 = new Label();
+            panel2 = new Panel();
+            owner = new Label();
+            buyrent = new Label();
+            contact = new Label();
+            rooms = new Label();
+            price = new Label();
+            address = new Label();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.FromArgb(0, 192, 192);
+            groupBox2.Controls.Add(owner);
+            groupBox2.Controls.Add(buyrent);
+            groupBox2.Controls.Add(contact);
+            groupBox2.Controls.Add(rooms);
+            groupBox2.Controls.Add(price);
+            groupBox2.Controls.Add(address);
+            groupBox2.Controls.Add(panel2);
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(panel1);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(pictureBox3);
             groupBox2.Controls.Add(button5);
             groupBox2.Controls.Add(label1);
             groupBox2.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
@@ -62,11 +79,28 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            label7.Location = new Point(15, 60);
+            label7.Name = "label7";
+            label7.Size = new Size(66, 20);
+            label7.TabIndex = 11;
+            label7.Text = "Owner";
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(464, 21);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(599, 336);
+            panel1.TabIndex = 10;
+            // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
-            label9.Location = new Point(15, 174);
+            label9.Location = new Point(15, 192);
             label9.Name = "label9";
             label9.Size = new Size(92, 20);
             label9.TabIndex = 9;
@@ -76,7 +110,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
-            label4.Location = new Point(15, 136);
+            label4.Location = new Point(15, 157);
             label4.Name = "label4";
             label4.Size = new Size(79, 20);
             label4.TabIndex = 9;
@@ -86,7 +120,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
-            label3.Location = new Point(15, 101);
+            label3.Location = new Point(15, 123);
             label3.Name = "label3";
             label3.Size = new Size(69, 20);
             label3.TabIndex = 8;
@@ -96,19 +130,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
-            label2.Location = new Point(15, 66);
+            label2.Location = new Point(15, 92);
             label2.Name = "label2";
-            label2.Size = new Size(66, 20);
+            label2.Size = new Size(53, 20);
             label2.TabIndex = 7;
-            label2.Text = "Owner";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(732, 23);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(331, 334);
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
+            label2.Text = "Price";
             // 
             // button5
             // 
@@ -164,11 +190,94 @@
             label6.Text = "idealhome";
             label6.MouseClick += logo_click;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            label8.Location = new Point(15, 222);
+            label8.Name = "label8";
+            label8.Size = new Size(112, 20);
+            label8.TabIndex = 12;
+            label8.Text = "Description";
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(15, 245);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(443, 112);
+            panel2.TabIndex = 13;
+            // 
+            // owner
+            // 
+            owner.AutoSize = true;
+            owner.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            owner.ForeColor = Color.White;
+            owner.Location = new Point(143, 60);
+            owner.Name = "owner";
+            owner.Size = new Size(66, 20);
+            owner.TabIndex = 19;
+            owner.Text = "Owner";
+            // 
+            // buyrent
+            // 
+            buyrent.AutoSize = true;
+            buyrent.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            buyrent.ForeColor = Color.White;
+            buyrent.Location = new Point(143, 192);
+            buyrent.Name = "buyrent";
+            buyrent.Size = new Size(92, 20);
+            buyrent.TabIndex = 17;
+            buyrent.Text = "Buy/Rent";
+            // 
+            // contact
+            // 
+            contact.AutoSize = true;
+            contact.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            contact.ForeColor = Color.White;
+            contact.Location = new Point(143, 157);
+            contact.Name = "contact";
+            contact.Size = new Size(79, 20);
+            contact.TabIndex = 18;
+            contact.Text = "Contact";
+            // 
+            // rooms
+            // 
+            rooms.AutoSize = true;
+            rooms.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            rooms.ForeColor = Color.White;
+            rooms.Location = new Point(143, 123);
+            rooms.Name = "rooms";
+            rooms.Size = new Size(69, 20);
+            rooms.TabIndex = 16;
+            rooms.Text = "Rooms";
+            // 
+            // price
+            // 
+            price.AutoSize = true;
+            price.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            price.ForeColor = Color.White;
+            price.Location = new Point(143, 92);
+            price.Name = "price";
+            price.Size = new Size(53, 20);
+            price.TabIndex = 15;
+            price.Text = "Price";
+            // 
+            // address
+            // 
+            address.AutoSize = true;
+            address.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Bold);
+            address.ForeColor = Color.White;
+            address.Location = new Point(143, 30);
+            address.Name = "address";
+            address.Size = new Size(81, 20);
+            address.TabIndex = 14;
+            address.Text = "Address";
+            // 
             // HomeDetail
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1093, 516);
+            ClientSize = new Size(1093, 500);
             Controls.Add(pictureBox4);
             Controls.Add(label5);
             Controls.Add(label6);
@@ -177,7 +286,6 @@
             Text = "HomeDetail";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -186,7 +294,6 @@
         #endregion
 
         private GroupBox groupBox2;
-        private PictureBox pictureBox3;
         private Button button5;
         private Label label1;
         private Label label3;
@@ -196,5 +303,15 @@
         private PictureBox pictureBox4;
         private Label label5;
         private Label label6;
+        private Label label7;
+        private Panel panel1;
+        private Label owner;
+        private Label buyrent;
+        private Label contact;
+        private Label rooms;
+        private Label price;
+        private Label address;
+        private Panel panel2;
+        private Label label8;
     }
 }
