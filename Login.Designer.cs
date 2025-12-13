@@ -73,6 +73,7 @@
             button8.TabIndex = 17;
             button8.Text = "Login";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click_1;
             // 
             // button1
             // 
@@ -160,6 +161,7 @@
             Controls.Add(label2);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);

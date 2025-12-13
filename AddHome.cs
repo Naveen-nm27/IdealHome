@@ -75,10 +75,11 @@ namespace IdealHome
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int oid = 1;
+            int oid = 1;  // Assuming OwnerId is hardcoded as '1', replace with dynamic value if needed
             int price = 0;
             string sellOrRent = null;
 
+            // Rent or Sell Validation
             if (radioButton2.Checked) // Sell
             {
                 sellOrRent = "Sell";
@@ -103,23 +104,71 @@ namespace IdealHome
                 return;
             }
 
-            var home = new Home(
+            // Create Home object with all required parameters
+            string description = home_desc.Text;
+            string imagePath = ""; // Optional, but leave it as an empty string if no image selected
+            string status = "Available"; // Default status
+            int userID = Convert.ToInt32(uid.Text);
+            Home home = new Home(
+                userID,
                 txt_title.Text,
                 combo_locate.Text,
                 price,
-                home_desc.Text,
+                description,
+                imagePath,
                 sellOrRent
             );
 
-            bool added = op.addHome(home);
+            // Validate Image before adding it
+            string selectedImagePath = string.Empty;
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select an Image";
+            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
 
-            if (added)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("House Added");
+                selectedImagePath = ofd.FileName;
+                string extension = Path.GetExtension(selectedImagePath).ToLower();
+
+                // Validate file extension (image format)
+                if (extension != ".jpg" && extension != ".jpeg" && extension != ".png" && extension != ".bmp")
+                {
+                    MessageBox.Show("Invalid image format. Please select a .jpg, .jpeg, .png, or .bmp file.");
+                    return;
+                }
+
+                // Now we proceed to add the home and image paths to the database
+                bool added = op.addHome(home); // Add home details
+                if (added)
+                {
+                    List<string> selectedPaths = new List<string> { selectedImagePath };  // Add image path to list
+
+                    // Add the image for the property
+                    bool imageAdded = op.AddImagesForProperty(oid, selectedPaths);
+
+                    if (imageAdded)
+                    {
+                        // Preview the image on the UI
+                        List<string> previews = op.PreviewAndLoadImages(oid);
+                        if (previews != null)
+                        {
+                            DisplayImagesOnPanel(previews); // Show the images in FlowLayoutPanel
+                        }
+
+                        MessageBox.Show("Home and Image added successfully!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add the home. Please try again.");
+                }
             }
-
-
+            else
+            {
+                MessageBox.Show("Please select an image.");
+            }
         }
+
 
         private void price_rent_ValueChanged(object sender, EventArgs e)
         {
@@ -190,6 +239,13 @@ namespace IdealHome
                 FileName = url,
                 UseShellExecute = true
             });
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            IdealHome idealHome = new IdealHome();
+            idealHome.Show();
+            this.Hide();
         }
     }
 }

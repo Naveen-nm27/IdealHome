@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddHome));
             groupBox2 = new GroupBox();
+            button2 = new Button();
+            textBox1 = new TextBox();
+            label9 = new Label();
             txt_rent_price = new TextBox();
             txt_sell_price = new TextBox();
             home_desc = new RichTextBox();
@@ -55,9 +58,6 @@
             label12 = new Label();
             uid = new Label();
             folderBrowserDialog1 = new FolderBrowserDialog();
-            textBox1 = new TextBox();
-            label9 = new Label();
-            button2 = new Button();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -93,6 +93,33 @@
             groupBox2.TabIndex = 17;
             groupBox2.TabStop = false;
             groupBox2.Text = "House Info";
+            // 
+            // button2
+            // 
+            button2.Font = new Font("MS Reference Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(729, 464);
+            button2.Name = "button2";
+            button2.Size = new Size(99, 27);
+            button2.TabIndex = 38;
+            button2.Text = "Maps";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(186, 464);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(537, 27);
+            textBox1.TabIndex = 37;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(6, 471);
+            label9.Name = "label9";
+            label9.Size = new Size(156, 20);
+            label9.TabIndex = 36;
+            label9.Text = "Google Location";
             // 
             // txt_rent_price
             // 
@@ -296,6 +323,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 32;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // label12
             // 
@@ -316,33 +344,6 @@
             uid.Size = new Size(20, 20);
             uid.TabIndex = 34;
             uid.Text = "2";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(186, 464);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(537, 27);
-            textBox1.TabIndex = 37;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(6, 471);
-            label9.Name = "label9";
-            label9.Size = new Size(156, 20);
-            label9.TabIndex = 36;
-            label9.Text = "Google Location";
-            // 
-            // button2
-            // 
-            button2.Font = new Font("MS Reference Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(729, 464);
-            button2.Name = "button2";
-            button2.Size = new Size(99, 27);
-            button2.TabIndex = 38;
-            button2.Text = "Maps";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // AddHome
             // 

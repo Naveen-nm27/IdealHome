@@ -12,9 +12,11 @@ namespace IdealHome
 {
     public partial class IdealHome : Form
     {
+        
         public IdealHome()
         {
             InitializeComponent();
+
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace IdealHome
 
         private void button8_Click(object sender, EventArgs e)
         {
-            StudentDashboard stu_dash = new StudentDashboard();
+            StudentDashboard stu_dash = new StudentDashboard(0);
             stu_dash.Show();
             this.Hide();
         }
@@ -51,7 +53,7 @@ namespace IdealHome
 
         private void button8_Click_1(object sender, EventArgs e)
         {
-            StudentDashboard st_dsh = new StudentDashboard();
+            StudentDashboard st_dsh = new StudentDashboard(0);
             st_dsh.Show();
             this.Hide();
         }
@@ -72,9 +74,19 @@ namespace IdealHome
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SellerDashBoard sellerDash = new SellerDashBoard();
+            SellerDashBoard sellerDash = new SellerDashBoard(0);
             sellerDash.Show();
             this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IdealHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

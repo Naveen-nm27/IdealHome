@@ -29,55 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IdealHome));
-            button8 = new Button();
-            button1 = new Button();
             button5 = new Button();
             button6 = new Button();
             button3 = new Button();
-            textBox1 = new TextBox();
             label2 = new Label();
             label3 = new Label();
             pictureBox1 = new PictureBox();
             button4 = new Button();
             button7 = new Button();
             button9 = new Button();
-            button11 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.FromArgb(0, 192, 192);
-            button8.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold);
-            button8.Location = new Point(12, 100);
-            button8.Name = "button8";
-            button8.Size = new Size(518, 63);
-            button8.TabIndex = 11;
-            button8.Text = "Student";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click_1;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(0, 192, 192);
-            button1.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold);
-            button1.Location = new Point(12, 341);
-            button1.Name = "button1";
-            button1.Size = new Size(518, 63);
-            button1.TabIndex = 9;
-            button1.Text = "Become a Seller";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // button5
             // 
             button5.BackColor = Color.FromArgb(0, 192, 192);
             button5.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold);
-            button5.Location = new Point(12, 183);
+            button5.Location = new Point(12, 164);
             button5.Name = "button5";
             button5.Size = new Size(518, 63);
             button5.TabIndex = 12;
-            button5.Text = "Sign In";
+            button5.Text = "Log in";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
@@ -85,7 +57,7 @@
             // 
             button6.BackColor = Color.FromArgb(0, 192, 192);
             button6.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold);
-            button6.Location = new Point(12, 263);
+            button6.Location = new Point(12, 95);
             button6.Name = "button6";
             button6.Size = new Size(518, 63);
             button6.TabIndex = 13;
@@ -107,14 +79,6 @@
             button3.Size = new Size(43, 43);
             button3.TabIndex = 17;
             button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(538, 32);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(214, 36);
-            textBox1.TabIndex = 22;
             // 
             // label2
             // 
@@ -139,6 +103,7 @@
             label3.Size = new Size(193, 47);
             label3.TabIndex = 24;
             label3.Text = "idealhome";
+            label3.Click += label3_Click;
             label3.MouseClick += Logo_Click;
             // 
             // pictureBox1
@@ -196,17 +161,6 @@
             button9.TabIndex = 31;
             button9.UseVisualStyleBackColor = false;
             // 
-            // button11
-            // 
-            button11.BackColor = Color.FromArgb(0, 192, 192);
-            button11.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold);
-            button11.Location = new Point(758, 25);
-            button11.Name = "button11";
-            button11.Size = new Size(150, 47);
-            button11.TabIndex = 32;
-            button11.Text = "Search";
-            button11.UseVisualStyleBackColor = false;
-            // 
             // IdealHome
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -214,41 +168,34 @@
             BackColor = SystemColors.ControlLightLight;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1098, 749);
-            Controls.Add(button11);
             Controls.Add(button9);
             Controls.Add(button7);
             Controls.Add(button4);
             Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
             Controls.Add(button3);
-            Controls.Add(button8);
             Controls.Add(button6);
             Controls.Add(button5);
-            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "IdealHome";
             RightToLeft = RightToLeft.No;
             Text = "IdealHome";
+            Load += IdealHome_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Button button8;
-        private Button button1;
         private Button button5;
         private Button button6;
         private Button button3;
-        private TextBox textBox1;
         private Label label2;
         private Label label3;
         private PictureBox pictureBox1;
         private Button button4;
         private Button button7;
         private Button button9;
-        private Button button11;
 
         public static object Properties { get; private set; }
     }
